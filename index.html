@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .attribution a {
+        color: hsl(228, 85%, 28%);
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1 class="heading">Contact Us</h1>
+        <div class="grid-2-cols">
+          <div class="firstname">
+            <h2>FirstName <span class="star">*</span></h2>
+            <label for="firstName"></label>
+            <input type="text" id="firstName" />
+          </div>
+          <div class="lastname">
+            <h2>LastName <span class="star">*</span></h2>
+            <label for="lastName"></label>
+            <input type="text" id="lastName" />
+          </div>
+          <div class="gmail">
+            <h2>Email Address<span class="star">*</span></h2>
+            <label for="email"></label>
+            <input type="email" name="Email" id="emai" />
+          </div>
+          <div class="query">
+            <h2>Query Type <span class="star">*</span></h2>
+            <div class="query-container">
+              <div class="gen">
+                <input type="radio" name="query" id="general" />
+                <label for="general">General Enquiry</label>
+              </div>
+
+              <div class="supt">
+                <input type="radio" name="query" id="support" />
+                <label for="support">Support Request Enquiry</label>
+              </div>
+            </div>
+          </div>
+          <div class="msg">
+            <h2>Message</h2>
+            <label for="message"></label>
+            <textarea name="message" id="message" type="text"></textarea>
+          </div>
+        </div>
+        <div class="foot">
+          <input type="checkbox" name="check" id="check" />
+          <label for="check">I consent to being contacted by the team</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a href="https://github.com/naveenprasad07" target="_blank"
+        >Naveen Prasad</a
+      >
+    </div>
+  </body>
+</html>
